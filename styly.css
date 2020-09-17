@@ -2,11 +2,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient( #615dad, #ffc8da)
+
+  background: linear-gradient(#615dad, #ffc8da);
 }
 
 img {
   width: 500px;
+  border-radius: 10px 10px 0 0;
 }
 
 main {
@@ -16,6 +18,7 @@ main {
   width: 500px;
   background-color: #283e50;
   color: #ffffff;
+  border-radius: 10px 10px 0 0;
 }
 
 section {
@@ -67,13 +70,10 @@ a {
 
 .pravidla:hover,
 .pravidla:focus {
-background-color: #1cbb96;
+  background-color: #1cbb96;
 }
 
 .hra:hover,
 .hra:focus {
-background-color: #0090e9;
+  background-color: #0090e9;
 }
-
-
-
