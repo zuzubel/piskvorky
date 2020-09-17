@@ -1,8 +1,8 @@
-body{
-  background-color: pink;
+body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient( #615dad, #ffc8da)
 }
 
 img {
@@ -11,7 +11,7 @@ img {
 
 main {
   display: flex;
-  margin: 0;
+  margin: 40px 0;
   flex-direction: column;
   width: 500px;
   background-color: #283e50;
@@ -25,7 +25,7 @@ section {
 
 p {
   font-family: 'Roboto', sans-serif;
-font-size: 20px;
+  font-size: 20px;
 }
 
 h1 {
@@ -41,14 +41,19 @@ ul {
   width: 100%;
 }
 
-a{
+li {
+  display: inline-block;
+  width: 100%;
+}
+
+a {
   text-decoration: none;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   display: inline-block;
   width: 100%;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
 }
 
@@ -59,3 +64,16 @@ a{
 .hra {
   background-color: #0197f6;
 }
+
+.pravidla:hover,
+.pravidla:focus {
+background-color: #1cbb96;
+}
+
+.hra:hover,
+.hra:focus {
+background-color: #0090e9;
+}
+
+
+
