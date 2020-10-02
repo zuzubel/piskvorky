@@ -100,3 +100,8 @@ a {
 .instructions {
   width: 90%;
 }
+
+.pictureCross, .pictureCircle {
+  width: 1em; height: 1em;
+  filter: invert(100%);
+}
