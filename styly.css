@@ -1,16 +1,16 @@
-body {
+.index_body, .rules_body {
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(#615dad, #ffc8da);
 }
 
-img {
-  width: 500px;
+.main_picture {
+  width: 100%;
   border-radius: 10px 10px 0 0;
 }
 
-main {
+.index_main, .rules_main {
   display: flex;
   margin: 40px 0;
   flex-direction: column;
@@ -20,8 +20,13 @@ main {
   border-radius: 10px 10px 0 0;
 }
 
-section {
+.gameSection {
   padding: 10px;
+  text-align: center;
+}
+
+.rulesSection {
+  padding: 30px 15px 0 15px;
   text-align: center;
 }
 
@@ -30,7 +35,20 @@ p {
   font-size: 20px;
 }
 
-h1 {
+ol>li{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.listOfrules {
+  padding: 20px 40px 0 0;
+  text-align: left;
+  margin: 0;
+  padding-inline-start: 100px;
+}
+
+.gameName, .rules {
   font-family: 'Lobster', cursive;
   font-size: 50px;
   margin: 10px 0;
@@ -42,7 +60,7 @@ ul {
   width: 100%;
 }
 
-li {
+.liButtons {
   display: inline-block;
   width: 100%;
 }
@@ -58,20 +76,27 @@ a {
   text-align: center;
 }
 
-.pravidla {
+.pravidla, .odkazUvodniStranka {
   background-color: #1fcca4;
 }
 
 .hra {
   background-color: #0197f6;
+  border-top: solid 2px #283e50; 
 }
 
 .pravidla:hover,
-.pravidla:focus {
+.pravidla:focus,
+.odkazUvodniStranka:hover,
+.odkazUvodniStranka:focus {
   background-color: #1cbb96;
 }
 
 .hra:hover,
 .hra:focus {
   background-color: #0090e9;
+}
+
+.instructions {
+  width: 90%;
 }
