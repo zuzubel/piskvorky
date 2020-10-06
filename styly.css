@@ -91,24 +91,24 @@ a {
 }
 
 .pravidla,
-.odkazUvodniStranka {
+.odkazUvod {
   background-color: #1fcca4;
 }
 
-.hra {
+.odkazHra {
   background-color: #0197f6;
   border-top: solid 2px #283e50;
 }
 
 .pravidla:hover,
 .pravidla:focus,
-.odkazUvodniStranka:hover,
-.odkazUvodniStranka:focus {
+.odkazUvod:hover,
+.odkazUvod:focus {
   background-color: #1cbb96;
 }
 
-.hra:hover,
-.hra:focus {
+.odkazHra:hover,
+.odkazHra:focus {
   background-color: #0090e9;
 }
 
@@ -154,6 +154,9 @@ a {
     width: 600px;
   }
 
+  a {
+    font-size: 17px;
+  }
 }
 
 /* velmi široká obrazovka */
