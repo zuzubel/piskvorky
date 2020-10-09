@@ -1,9 +1,11 @@
 .index_body,
-.rules_body {
+.rules_body,
+.gameBody {
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(#615dad, #ffc8da);
+  background-attachment: fixed;
 }
 
 .main_picture {
@@ -12,7 +14,7 @@
 }
 
 .index_main,
-.rules_main {
+.rules_main{
   display: flex;
   margin: 40px 0;
   flex-direction: column;
@@ -32,7 +34,8 @@
   text-align: center;
 }
 
-p {
+p,
+h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
 }
@@ -164,4 +167,47 @@ a {
   .rules_main {
     max-width: 800px;
   }
+}
+
+/* hra styly */
+.gameMain {
+  display: flex;
+  margin: 40px 0;
+  flex-direction: column;
+  width: 400px;
+  color: #ffffff;
+  border-radius: 10px 10px 0 0;
+  max-width: 80wmin;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 0 20px;
+ }
+
+h1{
+  display: flex;
+  justify-content: center;
+}
+
+.containerTopMenu{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.gameArea{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+margin: 10px 20px 50px 20px;
+}
+
+button{
+  flex-shrink: 1;
+  flex-grow: 1;
+  width: 20px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid grey;
+  margin: 0;
+  flex-basis: calc(100% / 10);
 }
