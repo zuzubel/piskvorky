@@ -14,7 +14,7 @@
 }
 
 .index_main,
-.rules_main{
+.rules_main {
   display: flex;
   margin: 40px 0;
   flex-direction: column;
@@ -181,33 +181,76 @@ a {
   display: flex;
   flex-direction: column;
   padding: 20px 20px 0 20px;
- }
+}
 
-h1{
+h1 {
   display: flex;
   justify-content: center;
 }
 
-.containerTopMenu{
+.containerTopMenu {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   padding: 0 50px;
 }
 
-.gameArea{
+.containerTopLeft {
+  display: flex;
+  align-items: baseline;
+}
+
+.pictureCircle {
+  margin-left: 5px;
+}
+
+.containerTopRight {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.imgHome {
+  width: 24px;
+  height: 24px;
+}
+
+.aHome,
+.aReload {
+  padding: 13px 4px;
+  height: 15px;
+  border-radius: 3px;
+}
+
+.aHome {
+  background-color: #1fcca4;
+}
+
+.aReload {
+  background-color: #0197f6;
+  margin-left: 8px;
+}
+
+.gameArea {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-margin: 10px 20px 50px 20px;
+  margin: 10px 20px 50px 20px;
+  border: 2px solid #283e50;
+  background: linear-gradient(#9693c0, #d6bdc5);
 }
 
-button{
+button {
   flex-shrink: 1;
   flex-grow: 1;
   width: 20px;
   height: 40px;
   padding: 0;
-  border: 1px solid grey;
+  border: 2px solid #283e50;
   margin: 0;
   flex-basis: calc(100% / 10);
+  background: none;
+}
+
+button:hover {
+  background-color: #ddd3d5;
 }
