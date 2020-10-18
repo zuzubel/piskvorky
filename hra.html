@@ -16,7 +16,7 @@
       <nav class="containerTopMenu">
         <section class="containerTopLeft">
           <h2>HRAJE:</h2>
-          <img class="pictureCircle" src="circle.svg" alt="circle" />
+          <img id="currentPlayerImg" class="pictureCircle" src="circle.svg" alt="circle" />
         </section>
         <section class="containerTopRight">
           <a class="aHome" href="index.html"
@@ -28,115 +28,113 @@
               height="10px"
           /></a>
           <a class="aReload" href="hra.html"
-            ><img
-              class="imgReload"
-              src="restart.svg"
-              alt="reload image"
+            ><img class="imgReload" src="restart.svg" alt="reload image"
           /></a>
         </section>
       </nav>
       <section class="gameArea">
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
+        <button class="gameAreaButton"></button>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

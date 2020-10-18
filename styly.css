@@ -175,7 +175,6 @@ a {
 
 /* hra styly */
 .gameMain {
-  display: flex;
   flex-direction: column;
   margin: 0;
   color: #ffffff;
@@ -200,7 +199,7 @@ h1 {
 .containerTopLeft {
   display: flex;
   align-items: baseline;
-  padding-left: 15px;
+  padding-left: 5px;
 }
 
 .pictureCircle {
@@ -210,7 +209,7 @@ h1 {
 .containerTopRight {
   display: flex;
   justify-content: space-between;
-  padding-right: 15px;
+  padding-right: 5px;
 }
 
 .imgHome {
@@ -240,16 +239,17 @@ h1 {
   flex-wrap: wrap;
   width: 100%;
   margin: 10px 0 50px 0;
-  border: 2px solid #283e50;
-  background: linear-gradient(#9693c0, #d6bdc5);
 }
 
 .gameArea > button {
+  border-collapse: collapse;
   flex-basis: 10%;
   padding: 0;
-  border: 2px solid #283e50;
+  border: 0, 5 px solid;
   margin: 0;
-  background: none;
+  background-color: white;
+  opacity: 50%;
+  border-color: #283e50;
 }
 
 .gameArea > button:hover,
@@ -261,4 +261,16 @@ h1 {
   content: '';
   display: block;
   padding-top: 100%;
+}
+
+.board__field--circle {
+  background-image: url('circle.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.board__field--cross {
+  background-image: url('cross.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
 }
