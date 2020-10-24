@@ -245,11 +245,13 @@ h1 {
   border-collapse: collapse;
   flex-basis: 10%;
   padding: 0;
-  border: 0, 5 px solid;
+  border: 0, 1 px solid;
+  border-width: 1px;
   margin: 0;
   background-color: white;
   opacity: 50%;
   border-color: #283e50;
+  border-style: solid;
 }
 
 .gameArea > button:hover,
@@ -267,12 +269,26 @@ h1 {
   background-image: url('circle.svg');
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: 70%;
+  animation-duration: 0.15s;
+  animation-name: size;
 }
 
 .board__field--cross {
   background-image: url('cross.svg');
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: 70%;
+  animation-duration: 0.15s;
+  animation-name: size;
 }
 
+@keyframes size {
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 70%;
+  }
+}
 
