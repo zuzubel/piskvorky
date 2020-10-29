@@ -22,11 +22,14 @@ gameArea.addEventListener('click', (event) => {
   }
   if (isWinningMove(event.target)) {
     //přidání funkce na ověření výhry
-    alert(
+    const result = confirm(
       `Vyhrává tým${
         getSymbol(event.target) === 'circle' ? ' kolečka' : ' křížek'
       }`,
     );
+    if (result === true) {
+      return window.location.reload(); //jestli klikne uživatel OK, aktualizuje se stránka
+    }
   }
 });
 
@@ -98,7 +101,7 @@ const isWinningMove = (field) => {
     i--;
   }
 
-  // Koukni dolu
+  // Koukni doprava
   i = origin.column;
   while (
     i < boardSize - 1 &&
@@ -111,17 +114,6 @@ const isWinningMove = (field) => {
   if (inColumn >= symbolsToWin) {
     return true;
   }
-
-  /* //diagoválně doprava nahoru
-  i = origin.column;
-  while (
-    i < boardSize - 1 &&
-    symbol === getSymbol(getField(origin.row + 1, i + 1))
-  ) {
-    inRow++;
-    inColumn++;
-    i++;
-  } */
 
   return false;
 };
