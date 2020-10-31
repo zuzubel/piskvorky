@@ -23,9 +23,9 @@ gameArea.addEventListener('click', (event) => {
   if (isWinningMove(event.target)) {
     //přidání funkce na ověření výhry
     const result = confirm(
-      `Vyhrává tým${
-        getSymbol(event.target) === 'circle' ? ' kolečka' : ' křížek'
-      }`,
+      `Vyhrává${
+        getSymbol(event.target) === 'circle' ? ' kolečko' : ' křížek'
+      }. Pro spuštění další hry stiskni OK.`,
     );
     if (result === true) {
       return window.location.reload(); //jestli klikne uživatel OK, aktualizuje se stránka
@@ -101,7 +101,7 @@ const isWinningMove = (field) => {
     i--;
   }
 
-  // Koukni doprava
+  // Koukni dolu
   i = origin.row;
   while (
     i < boardSize - 1 &&
@@ -112,6 +112,64 @@ const isWinningMove = (field) => {
   }
 
   if (inColumn >= symbolsToWin) {
+    return true;
+  }
+  //DIAGONÁLA
+  //zkouška diagonály doprava dolu
+  let diagonal1 = 1;
+  let j = origin.row;
+  let k = origin.column;
+  while (
+    j < boardSize - 1 &&
+    k < boardSize - 1 &&
+    symbol === getSymbol(getField(j + 1, k + 1))
+  ) {
+    diagonal1++;
+    j++;
+    k++;
+  }
+
+  //doleva nahoru
+  j = origin.row;
+  k = origin.column;
+  while (j > 0 && k > 0 && symbol === getSymbol(getField(j - 1, k - 1))) {
+    diagonal1++;
+    j--;
+    k--;
+  }
+
+  if (diagonal1 >= symbolsToWin) {
+    return true;
+  }
+
+  // zkouška diagonály doprava nahoru
+  let diagonal2 = 1;
+  j = origin.row;
+  k = origin.column;
+  while (
+    j > 0 &&
+    k < boardSize - 1 &&
+    symbol === getSymbol(getField(j - 1, k + 1))
+  ) {
+    diagonal2++;
+    j--;
+    k++;
+  }
+
+  //doleva dolu
+  j = origin.row;
+  k = origin.column;
+  while (
+    j < boardSize - 1 &&
+    k > 0 &&
+    symbol === getSymbol(getField(j + 1, k - 1))
+  ) {
+    diagonal2++;
+    j++;
+    k--;
+  }
+
+  if (diagonal2 >= symbolsToWin) {
     return true;
   }
 
