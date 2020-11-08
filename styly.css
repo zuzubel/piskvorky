@@ -179,7 +179,7 @@ a {
   margin: 0;
   color: #ffffff;
   border-radius: 10px 10px 0 0;
-  max-width: 80vmin;
+  max-width: 60vmin;
   width: 60%;
   padding: 20px;
 }
@@ -284,12 +284,11 @@ h1 {
   animation-name: size;
 }
 
- @keyframes size {
+@keyframes size {
   0% {
     background-size: 0%;
   }
   100% {
     background-size: 70%;
   }
-} 
-
+}
